@@ -1,5 +1,6 @@
 # clean-architecture
-Excercise:
+Exercise:
+
 With The Clean Architecture in mind, make the following code cleaner:
 
 
@@ -11,12 +12,14 @@ With The Clean Architecture in mind, make the following code cleaner:
         data = response.json()
         related_topics = data['RelatedTopics']
         if not related_topics:
-            raise ValueError('That\'s not a word')
+            raise ValueError('No related topics found')
         for topic in related_topics:
             if topic['Text'] is not None:
                 return topic['Text']
-        raise ValueError('That\'s not a word')
+        raise ValueError('No related topics found')
     
     
     print(find_related_topic('ball'))
 
+
+This exercise is based on [The Clean Architecture in Python](https://www.youtube.com/watch?v=DJtef410XaM) youtube talk.
