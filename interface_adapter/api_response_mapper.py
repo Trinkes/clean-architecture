@@ -19,4 +19,4 @@ class ApiResponseMapper(object):
         if response_code == 200:
             return ResponseStatus.SUCCESS, self.map_topics(data)
         else:
-            return ResponseStatus.ERROR, data
+            return ResponseStatus.ERROR, []
