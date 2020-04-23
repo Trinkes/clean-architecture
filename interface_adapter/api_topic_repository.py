@@ -1,10 +1,10 @@
 from typing import Tuple, List
 
-from business_rules.topic_repository import TopicRepository
-from entity.response_status import ResponseStatus
-from entity.topic import Topic
-from interfaces_adapter.api_response_mapper import ApiResponseMapper
-from interfaces_adapter.topic_api import TopicApi
+from entities.response_status import ResponseStatus
+from entities.topic import Topic
+from interface_adapter.api_response_mapper import ApiResponseMapper
+from interface_adapter.topic_api import TopicApi
+from use_cases.topic_repository import TopicRepository
 
 
 class ApiTopicRepository(TopicRepository):

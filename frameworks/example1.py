@@ -1,7 +1,7 @@
-from business_rules.topic_service import TopicService
 from frameworks.requests_topic_api import RequestsTopicApi
-from interfaces_adapter.api_response_mapper import ApiResponseMapper
-from interfaces_adapter.api_topic_repository import ApiTopicRepository
+from interface_adapter.api_response_mapper import ApiResponseMapper
+from interface_adapter.api_topic_repository import ApiTopicRepository
+from use_cases.topic_service import TopicService
 
 
 def find_related_topic(word: str) -> str:

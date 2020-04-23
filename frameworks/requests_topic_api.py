@@ -3,7 +3,7 @@ from urllib.parse import urlencode
 
 import requests
 
-from interfaces_adapter.topic_api import TopicApi
+from interface_adapter.topic_api import TopicApi
 
 
 class RequestsTopicApi(TopicApi):

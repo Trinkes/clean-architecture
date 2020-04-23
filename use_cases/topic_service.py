@@ -1,6 +1,6 @@
-from business_rules.topic_repository import TopicRepository
-from entity.response_status import ResponseStatus
-from entity.topic import Topic
+from entities.response_status import ResponseStatus
+from entities.topic import Topic
+from use_cases.topic_repository import TopicRepository
 
 
 class TopicService:

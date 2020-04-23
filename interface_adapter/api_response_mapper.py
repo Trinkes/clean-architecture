@@ -1,7 +1,7 @@
 from typing import List, Tuple
 
-from entity.response_status import ResponseStatus
-from entity.topic import Topic
+from entities.response_status import ResponseStatus
+from entities.topic import Topic
 
 
 class ApiResponseMapper(object):
