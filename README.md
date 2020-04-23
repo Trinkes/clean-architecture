@@ -19,7 +19,7 @@ With The Clean Architecture in mind, make the following code cleaner:
         raise ValueError('No related topics found')
     
     
-    print(find_related_topic('ball'))
+    print(find_related_topic('java'))
 
 
 This exercise is based on [The Clean Architecture in Python](https://www.youtube.com/watch?v=DJtef410XaM) youtube talk.

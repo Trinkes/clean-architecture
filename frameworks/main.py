@@ -6,4 +6,5 @@ from use_cases.topic_service import TopicService
 service = TopicService(
     ApiTopicRepository(RequestsTopicApi('http://api.duckduckgo.com/'),
                        ApiResponseMapper()))
-print(service.find_related_topic('java').title)
+topic = service.find_related_topic('java')
+print(topic)
